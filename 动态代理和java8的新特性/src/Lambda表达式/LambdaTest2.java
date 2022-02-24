@@ -76,7 +76,7 @@ public class LambdaTest2 {
         System.out.println("-----------------------");
 
         //语法格式六:当Lambda体只有一条语句时.return和{}都可以省略
-        Comparator<Integer> com1 = (o1,o2) -> o1.compareTo(o2);;
+        Comparator<Integer> com1 = (o1,o2) -> o1.compareTo(o2);
         System.out.println(com.compare(41,31));
 
 

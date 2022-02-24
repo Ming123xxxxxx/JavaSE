@@ -9,11 +9,11 @@ import org.junit.Test;
  */
 public class String的一道面试题 {
 
-    String str = new String ("good");
+    String str = "good";
     char[] ch = {'t','e','s','t'};
     int in=10;
 
-    public void Change(String str,char ch[],int in){
+    public void Change(String str, char[] ch, int in){
         str="low";
         ch[0] = 'b';
         in=30;

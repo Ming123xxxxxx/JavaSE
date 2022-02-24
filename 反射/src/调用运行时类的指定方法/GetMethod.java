@@ -16,7 +16,7 @@ public class GetMethod {
     public void test() throws Exception{
         Class<Person> personClass = Person.class;
         //创建运行时类的对象
-        Person person = (Person)personClass.newInstance();
+        Person person = personClass.newInstance();
         //1。获取指定的某个方法
         //getDeclaredMethod():获取当前运行时类的指定方法
         //参数一:获取的方法  ,参数二:获取的方法的形参列表

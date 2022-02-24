@@ -14,7 +14,7 @@ interface ClothFactory{
 
 class proxClothFactory implements ClothFactory{
 
-    private ClothFactory factory;//用被代理对象进行实例化
+    private final ClothFactory factory;//用被代理对象进行实例化
 
     public proxClothFactory(ClothFactory factory){
         this.factory=factory;

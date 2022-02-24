@@ -14,7 +14,7 @@ public class Person extends Creature<String> implements Comparable<String>,MyInt
     int age;
     public int id;
 
-    public Person(){};
+    public Person(){}
 
     private Person(String name) {
         this.name = name;

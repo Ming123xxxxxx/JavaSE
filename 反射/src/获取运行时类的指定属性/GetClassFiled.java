@@ -19,7 +19,7 @@ public class GetClassFiled {
     public void test() throws Exception {
         Class<Person> personClass = Person.class;
         //创建运行时类的对象
-        Person person = (Person)personClass.newInstance();
+        Person person = personClass.newInstance();
         //获取指定的属性:要求运行时类中属性声明为public
         Field id = personClass.getField("id");
         //设置当前属性的值
@@ -35,7 +35,7 @@ public class GetClassFiled {
     public void test1() throws Exception{
         Class<Person> personClass = Person.class;
         //创建运行时类的对象
-        Person person = (Person)personClass.newInstance();
+        Person person = personClass.newInstance();
         //getDeclaredField(String filedNam):获取运行类中指定变量名的属性值
         Field declaredField = personClass.getDeclaredField("name");
         //setAccessible():保证当前属性是可访问的
